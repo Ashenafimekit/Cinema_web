@@ -1,0 +1,10 @@
+.nav-link.active {
+    font-weight: bold;
+    color: #007bff; /* Change to your desired color */
+  }
+
+.nav-link:hover{
+    font-weight: bold;
+    color: #007bff;
+}
+

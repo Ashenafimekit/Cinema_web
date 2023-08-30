@@ -1,12 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/contact_style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Header</title>
+  <!-- Link to Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Link to your custom CSS -->
+  <link rel="stylesheet" href="/css/index_style.css">
 </head>
 <body>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">
+        <!--<img src="logo.png" alt="Logo" width="50">-->
+        Cinema
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/html/index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/html/gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/html/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/html/contact.html">Contact</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+<div class="container mt-5">
+  <h1 class="text-center mb-4">About Us</h1>
+
+  <div class="row">
+    <!-- Left Column with Contact Form -->
+    <div class="col-md-6 mb-4">
+      <h4>Contact Us</h4>
+      <form>
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
     
+    <!-- Right Column with Map -->
+    <div class="col-md-6 mb-4">
+      <h4>Our Location</h4>
+      <div style="width: 100%; height: 300px;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0840630010374!2d-79.38311308421533!3d43.65322567668139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d74c3eaf8d%3A0x7e1f4071f18b1965!2sCN%20Tower!5e0!3m2!1sen!2sca!4v1595556821694!5m2!1sen!2sca" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Information in the Middle -->
+  <div class="text-center mb-4">
+    <h4>Contact Information</h4>
+    <p>Your Company Name</p>
+    <p>Address: Company Address</p>
+    <p>Phone: Contact Number</p>
+    <p>Email: Contact Email</p>
+  </div>
+</div>
+  
+
+  <footer class="footer bg-dark text-white text-center py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 ">
+          <h4>About Us</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet justo id augue tristique tristique.</p>
+        </div>
+        <div class="col-md-4 ">
+          <h4>Quick Links</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 ">
+          <h4 class="">Search</h4>
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0 " type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <hr class="my-3">
+    <p>&copy; 2023 Your Company. All rights reserved.</p>
+  </footer>
+
+
+  <!-- Link to Bootstrap JS (jQuery and Popper.js required) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,12 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/about_style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Header</title>
+  <!-- Link to Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Link to your custom CSS -->
+  <link rel="stylesheet" href="/css/index_style.css">
 </head>
 <body>
-    
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">
+        <!--<img src="logo.png" alt="Logo" width="50">-->
+        Cinema
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/html/index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/html/gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/html/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/html/contact.html">Contact</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container mt-5">
+    <h1 class="text-center my-4">About Us</h1>
+  
+    <div class="card-deck">
+      <div class="card">
+        <img src="/image/about.avif" class="card-img-top" alt="Service 1">
+        <div class="card-body">
+          <h5 class="card-title">Service Name</h5>
+          <p class="card-text">At Your Company Name, we specialize in offering Service Name that cater to Target Audience. From Brief Description of Service, we ensure that you receive top-tier Service Type that adds value to your business.</p>
+          <a href="#" class="btn btn-outline-primary">Learn More</a>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="/image/contact.jpg" class="card-img-top" alt="Service 2">
+        <div class="card-body">
+          <h5 class="card-title">Service Name</h5>
+          <p class="card-text">Elevate your Industry goals with our Service Name solutions. Whether you're looking to Service Goal 1, Service Goal 2, or Service Goal 3, our team has the expertise to guide you every step of the way.</p>
+          <a href="#" class="btn btn-outline-primary">Learn More</a>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="/image/7.jpg" class="card-img-top" alt="Service 3">
+        <div class="card-body">
+          <h5 class="card-title">Service Name</h5>
+          <p class="card-text">At Your Company Name, we redefine excellence with our Service Name offerings. Whether you're seeking Service Goal, Service Goal, or Service Goal, our dedicated team is equipped to exceed your expectations.</p>
+          <a href="#" class="btn btn-outline-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="my-5 text-center">
+      <h4>Contact Information</h4>
+      <p>Your Company Name</p>
+      <p>Address: Company Address</p>
+      <p>Phone: Contact Number</p>
+      <p>Email: Contact Email</p>
+      <a href="/html/contact.html" class="btn btn-outline-primary">Contact Us</a>
+    </div>
+  
+  </div>
+  
+  <footer class="footer bg-dark text-white text-center py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 ">
+          <h4>About Us</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet justo id augue tristique tristique.</p>
+        </div>
+        <div class="col-md-4 ">
+          <h4>Quick Links</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 ">
+          <h4 class="">Search</h4>
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0 " type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <hr class="my-3">
+    <p>&copy; 2023 Your Company. All rights reserved.</p>
+  </footer>
+
+
+  <!-- Link to Bootstrap JS (jQuery and Popper.js required) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
